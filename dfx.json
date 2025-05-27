@@ -4,17 +4,18 @@
       "type": "custom",
       "candid": "https://github.com/dfinity/ic/releases/download/ledger-suite-icrc-2025-05-22/ledger.did",
       "wasm": "https://github.com/dfinity/ic/releases/download/ledger-suite-icrc-2025-05-22/ic-icrc1-ledger.wasm.gz",
-      "init_arg": "(variant {Init = record { token_symbol = 'btoken'; token_name = 'Bootcamp Coin'; minting_account = record { owner = principal 'lqo44-sg6fq-abyjc-ydk7u-r7j2h-eoi4f-4673e-qglie-2zfzr-ymycc-qqe'}; transfer_fee = 10_000; metadata = vec {}; feature_flags = opt record{icrc2 = true}; initial_balances = vec { record { record { owner = principal 'pqnzc-p56he-yzciz-vpfyh-ofrsg-2j54p-srpqo-yasgh-yonuo-2q4n2-pae'; }; 100_000_000_000; }; }; archive_options = record { num_blocks_to_archive = 1000; trigger_threshold = 2000; controller_id = principal 'asfcg-vnbsv-ggquq-ntsgk-g3o7x-wta4e-cuzc4-plx7h-baogq-qjlil-4qe'; cycles_for_archive_creation = opt 10000000000000; }; } })"
+      "init_arg": "(variant {Init = record { token_symbol = \"btoken\"; token_name = \"Bootcamp Coin\"; minting_account = record { owner = principal \"lqo44-sg6fq-abyjc-ydk7u-r7j2h-eoi4f-4673e-qglie-2zfzr-ymycc-qqe\"}; transfer_fee = 10_000; metadata = vec {}; feature_flags = opt record{icrc2 = true}; initial_balances = vec { record { record { owner = principal \"pqnzc-p56he-yzciz-vpfyh-ofrsg-2j54p-srpqo-yasgh-yonuo-2q4n2-pae\"; }; 100_000_000_000; }; }; archive_options = record { num_blocks_to_archive = 1000; trigger_threshold = 2000; controller_id = principal \"asfcg-vnbsv-ggquq-ntsgk-g3o7x-wta4e-cuzc4-plx7h-baogq-qjlil-4qe\"; cycles_for_archive_creation = opt 10000000000000; }; } })"
     },
     "internet_identity": {
-    "type": "custom",
-    "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
-    "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz",
-    "shrink": false,
-    "remote": {
-      "id": {
-        "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"              
-      }}
+      "type": "custom",
+      "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
+      "wasm": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity_dev.wasm.gz",
+      "shrink": false,
+      "remote": {
+        "id": {
+          "ic": "rdmx6-jaaaa-aaaaa-aaadq-cai"
+        }
+      }
     },
     "btoken_backend": {
       "main": "src/btoken_backend/main.mo",

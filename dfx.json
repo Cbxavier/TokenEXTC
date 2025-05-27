@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "btoken_backend": {
+      "main": "src/btoken_backend/main.mo",
+      "type": "motoko"
+    },
+    "btoken_frontend": {
+      "dependencies": [
+        "btoken_backend"
+      ],
+      "source": [
+        "src/btoken_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "btoken_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
